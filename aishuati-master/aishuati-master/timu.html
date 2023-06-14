@@ -8,7 +8,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-control" content="no-cache,must-revalidate">
     <meta http-equiv="Cache" content="no-cache">
-    <title>爱刷题</title>
+    <title>python静态练习网站</title>
     <link rel="stylesheet" href="./css/iview.css">
     <script>
         var _hmt = _hmt || [];
@@ -128,13 +128,10 @@
         <p class='process'>第{{page+1}}题，共{{data.length}}题</p>
         <Card class='timu'>
             <p slot="title">
-                <label
-                    class='type' v-if="timu.option">{{timu.option.length?(timu.answer.length===1?'单选':'多选'):(timu.answer.length>16?'简答':'填空')}}</label>{{timu.title}}
+                <label class='type'
+                    v-if="timu.option">{{timu.option.length?(timu.answer.length===1?'单选':'多选'):(timu.answer.length>16?'简答':'填空')}}</label>{{timu.title}}
             </p>
-            <!-- <a href="#" slot="extra" @click.prevent="changeLimit">
-                <Icon type="ios-loop-strong"></Icon>
-                Change
-            </a> -->
+
             <div class="option">
                 <div v-for="(i,k) in timu.option" v-key='k' @click='select(k)' :class='daan.indexOf(k)!=-1?"active":""'>
                     {{zidian[k]}}.{{i}}</div>
