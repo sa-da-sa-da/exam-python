@@ -28,23 +28,23 @@
       var myEvent = new CustomEvent('setUserInfo', {
         detail: {
           username: "未登录",
-          avatar: "./static/avatar.png",
+          avatar: "/avatar.png",
         }
       });
       setTimeout(() => {
         window.document.dispatchEvent(myEvent);
       }, 500)
     }</script>
-  <link href=./static/css/appPlayer.css rel=stylesheet>
-  <link href=./static/css/app.css rel=stylesheet>
+  <link href=/css/appPlayer.css rel=stylesheet>
+  <link href=/css/app.css rel=stylesheet>
 </head>
 
 <body>
   <div id=app></div>
-  <script type=text/javascript src=./static/js/manifest.js></script>
-  <script type=text/javascript src=./static/js/vendor.js></script>
-  <script type=text/javascript src=./static/js/appPlayer.js></script>
-  <script type=text/javascript src=./static/js/app.js></script>
+  <script type=text/javascript src=/js/manifest.js></script>
+  <script type=text/javascript src=/js/vendor.js></script>
+  <script type=text/javascript src=/js/appPlayer.js></script>
+  <script type=text/javascript src=/js/app.js></script>
 </body>
 
 </html>
